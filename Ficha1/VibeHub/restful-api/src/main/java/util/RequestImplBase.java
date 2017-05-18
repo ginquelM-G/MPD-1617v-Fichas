@@ -6,7 +6,7 @@ import java.util.ArrayList;
 /**
  * Created by Moreira on 22-04-2017.
  */
-public abstract class Request implements IRequest{
+public abstract class RequestImplBase implements IRequest{
 
     protected void processStream(String path, ArrayList<String> res){
         try(InputStream in = ClassLoader.getSystemResource(path).openStream()){
